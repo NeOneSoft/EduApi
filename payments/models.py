@@ -17,6 +17,5 @@ class Payment(models.Model):
     payment_gross = models.DecimalField(max_digits=6, decimal_places=2)
     shipping = models.DecimalField(max_digits=6, decimal_places=2)
 
-    # Setting display to show in the Django admin site
     def __str__(self):
         return "Payment id <{}>".format(self.id)
